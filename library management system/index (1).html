@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#a").css("color", "lightblue").slideUp(2000).slideDown(2000);
+  });
+});
+</script>
+</head>
+
+    
+  
+  
+  </head>
+  
+  <body  bgcolor = lightgreen>
+      
+  <h1>Library details</h1>
+ 
+<div id = "a">  
+     <form action="./insertSDetails.jsp">
+      
+    s.no: <input type="text" name="sno" /><br><br>
+ 
+   book name : <input type="text" name="bookname" /><br><br>
+           
+    available now: <input type="text" name="available" /><br><br>
+ 
+    author name: <input type="text" name="author" /><br><br>
+         
+    cost: <input type="text" name="cost" /><br><br>
+   
+    <input type="submit" value="Insert Details" />
+    
+    </form>
+ </div>
+<br><br>
+
+
+<button>slide show</button>
+
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<html> 
+<body bgcolor = yellow> 
+<h1 style="text-align: center;fontstyle:  
+normal;color:rebeccapurple">RAHUL library</h1> 
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["username"].value;
+ let  y = document.forms["myForm"]["pass"].value;
+  if (x == "" ||y=="") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+
+<h2>ENTRY POINT</h2>
+
+<form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+  library user name: <input type="text" name="username">
+  password:<input type ="password" name = "pass">
+  <input type="submit" value="Submit">
+<input type = "reset" value = "clear all">
+</form>
+
+</body>
+</html>
+
